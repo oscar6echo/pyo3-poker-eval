@@ -1,0 +1,22 @@
+[package]
+name = "pyo3-poker-eval"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+pyo3 = { version = "0.20.2", features = ["extension-module"] }
+serde = { version = "1.0.196", features = ["derive"] }
+serde-pyobject = { version = "0.2.0" }
+poker_eval = { version = "0.1.0", features = ["serde"] }
+
+[lib]
+name = "_rust"
+# needs to match the name of the function with the `[#pymodule]` attribute
+path = "rust/lib.rs"
+crate-type = ["cdylib"]
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
