@@ -2,7 +2,8 @@
 
 ## Overview
 
-Python [PyO3](https://pyo3.rs/) wrapper package over Rust crate [poker_eval](https://crates.io/crates/poker_eval).
+Python [PyO3](https://pyo3.rs/) wrapper package over Rust crate [poker_eval](https://crates.io/crates/poker_eval).  
+Cross compilation "linux2win" is done with [cross](https://github.com/cross-rs/cross).  
 
 ## Build
 
@@ -85,4 +86,4 @@ pip install pyo3_poker_eval
 
 ## Ref
 
-Packaging offical recommendation: [Is setup.py deprecated?](https://packaging.python.org/en/latest/discussions/setup-py-deprecated/).
+Python packaging offical recommendation: [Is setup.py deprecated?](https://packaging.python.org/en/latest/discussions/setup-py-deprecated/).
