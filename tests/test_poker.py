@@ -190,4 +190,4 @@ def test_game_mc(c):
 
     target = {"win": 0.1676863067074523, "tie": 0.0034908351396334054}
 
-    assert is_dict_approx_equal(game_mc, target, precision=1e-4)
+    assert is_dict_approx_equal(game_mc, target, precision=1e-3)

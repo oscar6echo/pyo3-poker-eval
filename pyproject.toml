@@ -24,8 +24,11 @@ classifiers = [
 ]
 requires-python = ">=3.10"
 dependencies = [
-    # tbd
+    # none
 ]
+
+[project.optional-dependencies]
+dev = ["pytest"]
 
 [project.urls]
 repository = "https://github.com/oscar6echo/pyo3-poker-eval.git"
@@ -47,7 +50,9 @@ packages = ["pyo3_poker_eval"]
 [[tool.setuptools-rust.ext-modules]]
 # Private Rust extension module to be nested into the Python package
 target = "pyo3_poker_eval._rust"
-# IMPORTANT: build with --release
+# IMPORTANT: build with --release -> large impact on speed
 debug = false
 # reduce wheel size
 strip = "All"
+# used for cross compile
+# args = ...
