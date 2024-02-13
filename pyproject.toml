@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 
 [project]
-name = "pyo3-poker-eval"
+name = "pyo3_poker_eval"
 version = "0.1.0"
 authors = [{ name = "firstname lastname", email = "author@gmail.com" }]
 description = "Poker eval library"
